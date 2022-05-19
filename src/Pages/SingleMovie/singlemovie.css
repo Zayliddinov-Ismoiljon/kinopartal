@@ -1,0 +1,47 @@
+.single{
+    width: 1440px;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px 80px;
+    /* align-items: center; */
+    margin: 0 auto;
+}
+
+.single__actors, .single__recomendations{
+    width: 25%;
+    padding: 10px;
+    background-color: pink;
+    overflow-y: scroll;
+}
+
+.single__info{
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(72, 71, 71, 0.4);
+}
+
+.single__heading{
+    color: #fff;
+    font-size: 36px;
+}
+
+.single__text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.btn{
+    padding: 8px ;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    margin-right: 10px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+

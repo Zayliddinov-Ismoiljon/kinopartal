@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.moviesapp{
+  width: 1440px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: darkcyan;
+}
+
+h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}

@@ -1,0 +1,38 @@
+.link{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: darkcyan;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.card__rating{
+    position: absolute;
+    background-color: #fff;
+    top: 10px;
+    right: 10px;
+    color: blue;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card__img{
+    width: 100%;
+}
+
+.card__title, .card__year{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+}
