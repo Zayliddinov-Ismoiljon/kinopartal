@@ -36,3 +36,28 @@
     font-size: 22px;
     color: #fff;
 }
+
+
+/* Responsive style start */
+
+@media only screen and (max-width:425px){
+    .link{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .card{
+        width: 95%;
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .card__title, .card__year{
+        font-size: 16px;
+    }
+
+    .card__img{
+        border-radius: 5px;
+    }
+}

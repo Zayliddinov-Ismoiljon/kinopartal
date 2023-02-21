@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className='moviesapp'>
-        <h1>The Movie App</h1>
+        {/* <h1>The Movie App</h1> */}
         <Nav/>
       </div>
 

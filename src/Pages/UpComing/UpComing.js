@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MovieCard from "../../Component/MovieCard/MovieCard";
+import './upcoming.css'
 
 const UpComing=()=>{
 
@@ -30,19 +31,10 @@ const UpComing=()=>{
         });
     },[])
 
-    const styles={
-        width:"1440px",
-        margin:"0 auto",
-        display:"flex",
-        flexWrap:"wrap",
-        // alignItems:"center", 
-        justifyContent:"space-between",
-        padding:"20px"
-    }
 
     return(
         
-        <div style={styles}>
+        <div className='upcoming-body'>
         {
             movie.isFetched ? (
                 movie.data.results.map(item=><MovieCard key={item.id} obj={item}/>)

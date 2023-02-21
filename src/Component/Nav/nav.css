@@ -39,3 +39,38 @@
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.nav-input{
+    padding : 10px 15px ;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+/* Responsive style start */
+
+@media only screen and (max-width:425px){
+    .nav{
+        padding: 5px 10px;
+    }
+
+    .nav-input{
+        display: none;
+    }
+
+    .logo{
+        width: 100px;
+        height: 30px;
+    }
+
+    .navlink{
+        font-size: 14px;
+    }
+
+    .list{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

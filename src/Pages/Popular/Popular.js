@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import MovieCard from '../../Component/MovieCard/MovieCard';
+import '../Popular/popular.css'
 
 const Popular = () => {
 	const [movie, setMovie] = useState([]);
@@ -12,13 +13,11 @@ const Popular = () => {
 			.then((data) => setMovie(data));
 	}, []);
 
-	// console.log(movie.results);
 
 	return (
 		<>
-			<div style={{ display: 'flex', flexWrap: 'wrap', width: "1440px",
-    margin: "0 auto", justifyContent: "space-between", marginTop:"30px" }}>
-				{movie.results && movie.results.map((item) => <MovieCard obj={item} />)}
+			<div className='popular-body'>
+				{movie.results && movie.results.map((item,i) => <MovieCard key={i} obj={item} />)}
 			</div>
 		</>
 	);

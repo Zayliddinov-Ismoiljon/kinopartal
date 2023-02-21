@@ -1,0 +1,17 @@
+.popular-body{
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin: 30px auto ;
+}
+
+/* Responsive style start */
+
+@media only screen and (max-width:425px){
+  .popular-body{
+    width: 100%;
+    margin-top: 15px;
+  }
+}

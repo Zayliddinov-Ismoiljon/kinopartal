@@ -63,7 +63,6 @@ const SingleMovie = () => {
 				},
 			)
 			.then(function (response) {
-				// console.log(response);
 				setVideo({
 					isFetched: true,
 					data: response.data,
@@ -146,7 +145,6 @@ const SingleMovie = () => {
 						})`,
 						backgroundRepeat: 'no-repeat',
 						backgroundSize: 'cover',
-						marginTop: '50px',
 					}}>
 					<div className='single__actors'>
 						<h2>Actors</h2>
@@ -172,8 +170,8 @@ const SingleMovie = () => {
 								{video.data.results.splice(0, 1).map((item) => (
 									<div key={item.id}>
 										<iframe
-											width='560'
-											height='315'
+											width='700'
+											height='400'
 											src={`https://www.youtube.com/embed/${item.key}`}
 											title={item.name}
 											allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
